@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import {
-  AreaChart, Area, BarChart, Bar, PieChart, Pie, Cell,
+  AreaChart, Area, PieChart, Pie, Cell,
   XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid
 } from 'recharts';
 import {
@@ -902,14 +902,6 @@ const ReportScreen = ({
     sessions: c.sessions,
     color: colors[i % colors.length],
   }));
-
-  const dailyBar = (reportData?.dailyTrend || []).map((d: any) => {
-    const date = new Date(d.date.replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3'));
-    return {
-      day: date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
-      sessions: d.sessions,
-    };
-  });
 
   const sessionsTrend = (reportData?.dailyTrend || []).map((d: any) => {
     const date = new Date(d.date.replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3'));
