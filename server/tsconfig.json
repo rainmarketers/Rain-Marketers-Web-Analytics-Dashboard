@@ -6,20 +6,24 @@
     "lib": ["ES2020"],
     "outDir": "./dist",
     "rootDir": "./src",
-    "strict": false,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": false,
     "resolveJsonModule": true,
-    "declaration": false,
-    "declarationMap": false,
-    "sourceMap": true,
+    "sourceMap": false,
     "ignoreDeprecations": "6.0",
-    "noEmitOnError": false
+    "noImplicitAny": false,
+    "strict": false,
+    "noEmitOnError": false,
+    "allowJs": true,
+    "checkJs": false
   },
   "ts-node": {
     "esm": true,
-    "experimentalEsm": true
+    "experimentalEsm": true,
+    "transpileOnly": true,
+    "compilerOptions": {
+      "module": "esnext"
+    }
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
