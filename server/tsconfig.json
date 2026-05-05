@@ -14,7 +14,8 @@
     "declaration": false,
     "declarationMap": false,
     "sourceMap": true,
-    "ignoreDeprecations": "6.0"
+    "ignoreDeprecations": "6.0",
+    "noEmitOnError": false
   },
   "ts-node": {
     "esm": true,
