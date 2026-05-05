@@ -10,20 +10,12 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "sourceMap": false,
-    "ignoreDeprecations": "6.0",
-    "noImplicitAny": false,
-    "strict": false,
-    "noEmitOnError": false,
-    "allowJs": true,
-    "checkJs": false
+    "ignoreDeprecations": "6.0"
   },
   "ts-node": {
     "esm": true,
     "experimentalEsm": true,
-    "transpileOnly": true,
-    "compilerOptions": {
-      "module": "esnext"
-    }
+    "transpileOnly": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
