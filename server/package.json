@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon --exec tsx src/index.ts",
     "build": "echo 'Build skipped - using tsx to run directly'",
-    "start": "tsx src/index.ts"
+    "start": "tsx --transpile-only src/index.ts"
   },
   "keywords": [],
   "author": "",
